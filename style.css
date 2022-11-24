@@ -31,7 +31,6 @@ section {
 
 section img,h1 {
   align-self: center;
-  padding: 10px;
 }
 
 
@@ -41,7 +40,7 @@ section.alternate-background {
 }
 
 main img {
-  width: 100%;
+  max-width: 100%;
 }
 
 /* ---  Groups & Items --- */
@@ -60,6 +59,11 @@ main img {
   flex: 2;
 }
 
+.blog div {
+  display: flex;
+  flex-direction: column;
+}
+
 /* -------  Navigation ------- */
 
 header {
@@ -70,7 +74,7 @@ header {
 
 .logo {
   font-family: "Tangerine", cursive;
-  font-size: 72px;
+  font-size: 42px;
   color: #ecdbc9;
 }
 
@@ -100,6 +104,7 @@ header nav ul li a:hover {
 form {
   border: 2px solid #6b1a22;
   padding: 10px;
+  margin: 10px;
 }
 
 form div {
@@ -156,32 +161,48 @@ footer p {
   }
 
   #join div {
-    flex: 3;
+    flex: 1;
   }
 
   .find {
     display: flex;
     flex-direction: column;
+    max-width: 500px;
   }
 
   .about{
     display: flex;
     flex-direction: row;
-    align-items: center
+    align-items: center;
+    flex-wrap: wrap;
   }
 
   .about img {
     flex: 1;
+    max-width: 25vw;
   }
 
+  .about-images {
+    display:flex;
+  }
+
+  .about-images .img-holder {
+    padding: 10px;
+  } 
+  
   .about p {
-    flex: 2;
+    flex: 1;
+    padding-left: 10px;
   }
 
   #download {
     display: flex;
     flex-direction: row;
     align-items: center;
+  }
+
+  #download .img-holder {
+    max-width: 50%;
   }
 
   .blog {
@@ -192,6 +213,8 @@ footer p {
   }
 
   .blog div {
-    width: 49%;
+    max-width: 49%;
+    padding-bottom: 30px;
   }
+
 }
