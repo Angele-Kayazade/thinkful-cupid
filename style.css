@@ -62,6 +62,7 @@ main img {
 .blog div {
   display: flex;
   flex-direction: column;
+  padding-bottom: 30px;
 }
 
 /* -------  Navigation ------- */
@@ -214,7 +215,6 @@ footer p {
 
   .blog div {
     max-width: 49%;
-    padding-bottom: 30px;
   }
 
 }
